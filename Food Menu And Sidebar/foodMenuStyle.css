@@ -1,0 +1,274 @@
+body {
+  margin:0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 15%;
+  gap: 20px;
+}
+.menuSide {
+  width: 700px;
+}
+.sideBar {
+  width: 300px;
+  margin-top: 20px;
+}
+hr{
+  border:0.5px solid #d2d2d2;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+.menuBox {
+  display: flex;
+  width: 700px;
+  height: 200px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow:3px 3px 5px 0px #9f9f9f;
+}
+.foodImg img {
+  width: 200px;
+  height: 200px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.foodDetails{
+  width: 500px;
+  margin: 0px 15px;
+}
+.foodDetails h3,
+.section1 h3,
+.section2 h3,
+.section4 h3{
+  font-family: 'Lobster', cursive;
+  font-weight: 200;
+  color: #4f4f4f;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-block-end: 10px;
+}
+.DetailSide h3{
+  font-size: 20px!important;
+  margin-block-start: 0px;
+}
+.foodDetails i,
+.foodDetails a{
+  color: #ff2244;
+}
+.foodDetails div{
+  font-size: 15px;
+  color: #444;
+}
+.foodDetails p{
+  font-size: 13px;
+  color: #6c6c6c;
+}
+.foodDetails a{
+  text-decoration: none;
+}
+.pages{
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pages span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9f9f9f;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #9f9f9f;
+  margin: 5px;
+}
+.pages span:nth-child(2){
+  background-color: #ff0026;
+  border-color: #ff0026 !important;
+  color: #fff !important;
+}
+
+
+.section2{
+  margin-top: 20px;
+}
+.search{
+  position: relative;
+}
+.search i{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #757575
+}
+.search input{
+  width: 300px;
+  height: 35px;
+  border: 1px solid #d2d2d2;
+  color: #4e4e4e;
+  border-radius: 20px;
+  padding:  0px 30px;
+}
+.pricesList{
+  display: grid;
+  grid-template-columns: 250px 30px;
+  grid-template-rows: repeat(6,30px);
+  justify-content: space-between;
+  color: #4e4e4e;
+  margin-top: -8px;
+}
+.menuBox2{
+  display: flex;
+  width: 300px;
+  align-items: flex-start;
+}
+.photo img{
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+}
+.DetailSide{
+  padding: 0px 10px;
+}
+.DetailSide i{
+  color: #ff0026;
+}
+
+
+.section3{
+  margin-top: 20px;
+  width: 300px;
+  height: 320px;
+  position: relative;
+  color: #f1f1f1;
+  padding: 5px 20px;
+  text-transform: capitalize;
+}
+.section3::after{
+  content: '';
+  width: 300px;
+  height: 320px;
+  background-image: url("image/29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.85;
+}
+.section3 h1{
+  font-family: 'Lobster', cursive;
+  font-weight: 300;
+  font-size: 50px;
+  margin-block-end: 0px;
+  margin-inline-end: 0px;
+}
+.section3 h1 span{
+  font-size: 70px !important;
+  color: #ff0026 !important;
+}
+.section3 button{
+  text-transform: uppercase;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e20022;
+  font-weight: 600;
+  box-shadow: 0px 5px 2px #b1001b
+}
+.section3 button:hover{
+  background-color: #ff0c31;
+  box-shadow: 0px 5px 4px #b1001b;
+  border-radius: 20px;
+}
+
+
+.groubOfImage{
+  width: 300px;
+  height: 260px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.groubOfImage img{
+  width: 85px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+
+
+.subscribeBox{
+  margin: 30px 15%;
+  width: 1000px;
+  height: 80px;
+  background-color: #e20022;
+  color: #eee;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+.subText{
+  width: 400px;
+}
+.subText h2{
+  font-family: 'Lobster', cursive;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+.subText p{
+  font-size: 12px;
+  margin-top: -10px;
+}
+.subSend{
+  width:400px;
+  position: relative;
+}
+.subSend input:first-of-type{
+  width: 400px;
+  height: 50px;
+  border-radius: 40px;
+  border: .5px solid #d2d2d2;
+  color: #d2d2d2;
+  text-indent:20px;
+  font-size: 12px;
+  background-color: transparent;
+}
+.subSend input:last-of-type{
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  background-color: #fff;
+  color: #ff0026;
+  border-radius: 40px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 0px 4px 3px 0px rgb(211, 211, 211);
+  top: 5px;
+  right: 0px;
+}
+footer{
+  width: 1519.5px;
+  height: 110px;
+  background-image: url("image/23.jpg");
+  background-size: cover;
+  margin-top: -90px ;
+}
