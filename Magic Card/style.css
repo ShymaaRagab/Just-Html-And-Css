@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #212534;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hoverCard {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 280px;
+  background-color: #212534;
+  color: #4789ec;
+  box-shadow: #879cba 0px 0px 13px 0px;
+  border-radius: 5px;
+}
+
+.show {
+  cursor: pointer;
+}
+
+.card {
+  background-color: #191c29;
+  width: 210px;
+  height: 280px;
+  border: 5px solid;
+  border-radius: 5px;
+  box-shadow: #002a68 0px 0px 13px 0px, #4e00c2 0px 0px 20px 15px;
+  animation: borderShadow 3s linear infinite forwards running;
+}
+
+.show:hover .card {
+  transition: 0.5s all ease;
+  display: none;
+}
+.show:hover .hoverCard {
+  transition: 0.5s all ease;
+  display: flex;
+}
+
+@keyframes borderShadow {
+  0% {
+    border-color: #5ddcff #125fd2 #125fd2 #125fd2;
+    box-shadow: #c9deff 6px -6px 15px 10px, #002a68 0px 0px 13px 0px,
+      #4e00c2 0px 0px 20px 15px;
+  }
+  25% {
+    border-color: #125fd2 #5ddcff #125fd2 #125fd2;
+    box-shadow: #c9deff 6px 6px 15px 10px, #002a68 0px 0px 13px 0px,
+      #4e00c2 0px 0px 20px 15px;
+  }
+  50% {
+    border-color: #125fd2 #125fd2 #5ddcff #125fd2;
+    box-shadow: #c9deff -6px 6px 15px 10px, #002a68 0px 0px 13px 0px,
+      #4e00c2 0px 0px 20px 15px;
+  }
+  100% {
+    border-color: #125fd2 #125fd2 #125fd2 #5ddcff;
+    box-shadow: #c9deff -6px -6px 15px 10px, #002a68 0px 0px 13px 0px,
+      #4e00c2 0px 0px 20px 15px;
+  }
+}
