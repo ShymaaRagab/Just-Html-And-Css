@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Check Survey</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1>Health Check Survey</h1>
+        <p>Empowering Healthier Lives,One Question</p>
+      </div>
+      <div class="logo">
+        <img src="./nurse.png" alt="nurse" />
+        <caption>
+          Health Care
+        </caption>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form action="#" method="post">
+          <h2>Personal Information</h2>
+          <div class="personal-info">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="name"
+            /><br />
+
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              min="15"
+              max="100"
+              id="age"
+              name="age"
+              required
+              placeholder="age"
+            />
+            <br />
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" /><br />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="example@email.com"
+            /><br />
+
+            <label for="address">Address:</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              required
+              placeholder="street address, city"
+            /><br />
+
+            <label>Gender:</label><br />
+            <div class="radio-option">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+              />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label>
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Other</label><br />
+            </div>
+          </div>
+
+          <h2>Health Questions</h2>
+          <div class="health-question">
+            <label>How would you describe your overall health?</label><br />
+            <div class="radio-option">
+              <input
+                type="radio"
+                id="excellent"
+                name="q1"
+                value="excellent"
+                required
+              />
+              <label for="excellent">Excellent</label>
+              <input type="radio" id="good" name="q1" value="good" />
+              <label for="good">Good</label>
+              <input type="radio" id="fair" name="q1" value="fair" />
+              <label for="fair">Fair</label>
+              <input type="radio" id="poor" name="q1" value="poor" />
+              <label for="poor">poor</label><br />
+            </div>
+            <label>Do you have any chronic health conditions?</label><br />
+            <div class="radio-option">
+              <input type="radio" id="diabets" name="q2" value="Diabets" />
+              <label for="diabets">Diabets</label>
+              <input
+                type="radio"
+                id="hypertension"
+                name="q2"
+                value="hypertension"
+              />
+              <label for="hypertension">Hypertension</label>
+              <input type="radio" id="other" name="q2" value="other" />
+              <label for="other">Other</label><br />
+            </div>
+            <label
+              >How often do you engage in physical activity or exercise?</label
+            ><br />
+            <div class="radio-option">
+              <input type="radio" id="daily" name="q3" value="daily" required />
+              <label for="daily">Daily</label>
+              <input type="radio" id="week" name="q3" value="1-2x a week" />
+              <label for="week">1-2x a week</label>
+              <input type="radio" id="never" name="q3" value="never" />
+              <label for="never">Never</label><br />
+            </div>
+
+            <label>How would you rate your stress level?</label><br />
+            <div class="radio-option">
+              <input type="radio" id="low" name="q4" value="low" required />
+              <label for="low">Low</label>
+              <input type="radio" id="moderate" name="q4" value="moderate" />
+              <label for="moderate">Moderate</label>
+              <input type="radio" id="fair" name="q4" value="fair" />
+              <label for="fair">Fair</label>
+              <input type="radio" id="poor" name="q4" value="poor" />
+              <label for="poor">poor</label><br />
+            </div>
+            <label>
+              How often do you consume fruits and vegetables im your diet</label
+            ><br />
+            <div class="radio-option">
+              <input type="radio" id="daily" name="q5" value="daily" required />
+              <label for="daily">Daily</label>
+              <input type="radio" id="n-week" name="q5" value="3-5x a week" />
+              <label for="n-week">3-5x a week</label>
+              <input type="radio" id="rarely" name="q5" value="rarely" />
+              <label for="rarely">Rarely</label><br />
+            </div>
+            <label for="feedback"
+              >Additional Comments or Concerns(Optional):</label
+            ><br />
+            <textarea id="feedback" name="feedback" rows="10"></textarea><br />
+
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright © 2024. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
