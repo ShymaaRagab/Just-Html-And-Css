@@ -246,6 +246,7 @@ hr {
   text-indent: 20px;
   font-size: 12px;
   background-color: transparent;
+  outline: none;
 }
 .subSend input:last-of-type {
   position: absolute;
@@ -263,9 +264,14 @@ hr {
   cursor: pointer;
 }
 footer {
-  width: 1519.5px;
+  width: 100%;
   height: 110px;
   background-image: url("image/23.jpg");
   background-size: cover;
   margin-top: -90px;
+}
+.pages span:hover {
+  cursor: pointer;
+  background-color: #ff0026;
+  color: #fff;
 }
